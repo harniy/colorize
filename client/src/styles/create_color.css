@@ -1,0 +1,84 @@
+.create__color__title {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.create__color__title:hover {
+  opacity: 1;
+}
+.create__colors__section {
+  height: 145px;
+  position: relative;
+}
+
+.create__color__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.user__color {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 1px 6px 0 #565656;
+  transition: .5s;
+}
+
+.selected__color {
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.save__user__modal {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+}
+
+input[name="user-name"] {
+  padding: 2px 5px;
+  background: transparent;
+  border: 0;
+  box-shadow: 1px 1px 4px 0 #00000061;
+  outline: none;
+}
+
+input[name="user-name"]:focus {
+  box-shadow: 1px 1px 6px 0 #8d773c;
+}
+
+button[name='user-send'] {
+  background: #f6cf67;
+  border: none;
+  box-shadow: 0 0 2px 0 #000;
+  padding: 2px 7px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+}
+
+
+/* окно диалога */
+
+p.speech {
+  position: fixed;
+  padding: 7px;
+  left: 0;
+  right: 0;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px #888;
+  margin: 0 auto;
+  margin-top: -40px;
+  display: none;
+}
+

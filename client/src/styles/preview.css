@@ -1,0 +1,25 @@
+.preview__sections {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient( 
+44deg
+ , #de02bb, #a137ed, #26e7e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preview__sections h1 {
+    font-size: 5rem;
+    color: aliceblue;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin: 0;
+    margin-top: -130px;
+}
+
+.preview__sections p {
+    color: #f0f8ffcf;
+}

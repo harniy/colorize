@@ -1,0 +1,48 @@
+.users__colors_db {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    background: white;
+    padding: 2px 15px;
+    cursor: pointer;
+    opacity: .3;
+    transition: .5s;
+    box-shadow: 1px 1px 10px 0px #a3a3a3;
+    animation: 1s 3 blink;
+}
+
+@keyframes blink {
+    0% {
+        opacity: .3;
+        box-shadow: 1px 1px 10px 0px #477de2;
+    } 50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
+}
+
+.users__colors_db:hover {
+    opacity: 1;
+}
+
+.colors__Db {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users__colors__section {
+    height: 0;
+    overflow: auto;
+    transition: .3s;
+    width: 200px;
+}
+
+.popular__colors__title:hover + .users__colors__section,
+.users__colors__section:hover {
+    height: auto;
+    max-height: 550px;
+}
+

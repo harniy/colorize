@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(57, 58, 75);
+  font-family: "Poppins", sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  margin: 100px 0 50px 0;
+  font-size: 3rem;
+}
+
+main {
+  text-align: center;
+}
+
+.btn {
+  margin: 10px;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: -1px 2px 4px #848484;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(
+    to right,
+    #f6d365 0%,
+    #fda085 51%,
+    #f6d365 100%
+  );
+}
+
+.random__color__section {
+  box-shadow: 0 0 5px 0 #00000061;
+  width: 500px;
+  margin: 100px auto 30px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.color__block {
+    height: 100%;
+    width: 25%;
+}
+
+
+.color__info {
+    opacity: 0;
+    transition: .4s ease-in-out;
+    cursor: context-menu;
+}
+
+.color__block:hover > .color__info {
+    opacity: 1;
+}
+
+.like__btn {
+    position: absolute;
+    right: -100px;
+    cursor: pointer;
+    width: 45px;
+    opacity: .2;
+    transition: .5s;
+}
+
+.like__btn:hover {
+    opacity: .6;
+}
+

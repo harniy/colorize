@@ -1,0 +1,46 @@
+.liked__colors__section {
+    position: absolute;
+    left: 45px;
+    opacity: .5;
+    cursor: pointer;
+    transition: 1.5s;
+    width: 200px;
+    top: 80%;
+}
+.liked__colors__section:hover {
+    opacity: 1;
+}
+
+.liked__colors__header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.liked__colors__header img {
+    width: 35px;
+    padding: 0 10px;
+    z-index: 20;
+}
+
+.linked_h3 {
+    transform: translateX(-85px);
+    opacity: 0;
+    transition: .7s;
+}
+
+.liked__colors {
+    opacity: 0;
+    transition: .6s;
+    overflow: auto;
+    max-height: 100%;
+    box-shadow: 1px 3px 6px 0 #0006;
+    max-height: 400px;
+    display: none;
+}
+.liked__colors_show {
+    display: block;
+}
+.l_colors {
+    display: flex;
+    padding: 2px 0;
+}
