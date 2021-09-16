@@ -10,7 +10,7 @@ export default function UsersColors() {
 
   const getColorsFromDb = async () => {
     try {
-      const resp = await fetch("https://pure-inlet-08580.herokuapp.com/colors");
+      const resp = await fetch("http://localhost:4000/colors");
       const data = await resp.json();
 
       setColorsDb([...data]);

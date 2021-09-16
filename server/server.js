@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 const express         = require('express')
 const cors            = require('cors')
 
-const PORT = process.env.PORT || 3300
+const PORT = process.env.PORT || 4000
 
 const app = express()
 
