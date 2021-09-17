@@ -39,7 +39,7 @@ export default function CreateColor({ colorFromApp }) {
 
   function savedColor() {
     const color = { user: userName, colors: Object.values(userColor) };
-    fetch("http://localhost:4000/save", {
+    fetch("https://colorized.ml/app/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

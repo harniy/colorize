@@ -10,7 +10,7 @@ export default function UsersColors() {
 
   const getColorsFromDb = async () => {
     try {
-      const resp = await fetch("http://localhost:4000/colors");
+      const resp = await fetch("https://colorized.ml/app/colors/");
       const data = await resp.json();
 
       setColorsDb([...data]);
