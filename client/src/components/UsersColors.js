@@ -1,16 +1,18 @@
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { colorsFromDb } from "../features/colors";
 import "../styles/users_colors.css";
 
 export default function UsersColors() {
   const [colorsDb, setColorsDb] = useState([]);
+  const serverUrl = useSelector(state => state.server.url)
+
 
   const dispatch = useDispatch();
 
   const getColorsFromDb = async () => {
     try {
-      const resp = await fetch("https://colorized.ml/app/colors/");
+      const resp = await fetch(`${serverUrl}colors/`);
       const data = await resp.json();
 
       setColorsDb([...data]);

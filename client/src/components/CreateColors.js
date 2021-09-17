@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { useRef } from "react";
+import { useSelector } from "react-redux";
 import "../styles/create_color.css";
 
 export default function CreateColor({ colorFromApp }) {
@@ -15,6 +16,8 @@ export default function CreateColor({ colorFromApp }) {
   const [selectColorBlock, setSelectColorBlock] = useState("");
 
   const infoBlock = useRef(null);
+
+  const serverUrl = useSelector(state => state.server.url)
 
   function getColor(e) {
     const blocks = document.querySelectorAll(".user__color");
@@ -39,7 +42,7 @@ export default function CreateColor({ colorFromApp }) {
 
   function savedColor() {
     const color = { user: userName, colors: Object.values(userColor) };
-    fetch("https://colorized.ml/app/save", {
+    fetch(`${serverUrl}save/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
