@@ -14,7 +14,6 @@ export default function UsersColors() {
     try {
       const resp = await fetch(`${serverUrl}colors/`);
       const data = await resp.json();
-      console.log(data)
       setColorsDb([...data]);
     } catch (e) {
       console.log(e);
