@@ -48,10 +48,8 @@ app.post('/save', async (req, res) => {
 })
 
 app.get('/colors', async ( req, res ) => {
-
     try{
       await client.connect() 
-
       const db = await client.db(dbName)
       const collection = await db.collection('colors')
   
